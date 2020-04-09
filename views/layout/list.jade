@@ -1,0 +1,34 @@
+body#list
+ nav.navbar.navbar-expand-lg.sticky-top.navbar-dark.bg-dark
+     a.navbar-brand(href='#') LOGIN
+     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+     #navbarNavDropdown.collapse.navbar-collapse
+          ul.navbar-nav
+           li.nav-item.active
+             a.nav-link(href='/')
+               | HOME 
+               span.sr-only (current)
+           li.nav-item
+              a.nav-link(href='/list') LIST
+br              
+h1 LOGIN CREDENTIALS
+ link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+ link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
+ link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/styles.css')
+ table.table.table-fit.table.table-striped.table-dark.w-auto
+  thead
+    tr
+        th Email
+        th Id
+    
+     tbody
+      each user in list
+       tr
+          td #{user.Email}
+          td #{user.Id}
+          
+    
+ 
+
+

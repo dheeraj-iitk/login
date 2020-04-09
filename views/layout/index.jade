@@ -1,0 +1,55 @@
+extends layout
+
+block content 
+ title
+  link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/styles.css')
+  link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+  link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
+ body
+   h2.text-center SIGNUP:
+   form(method="POST",action='/signup')
+     p EMAIL:
+     input#title(type="text",name="Email",placeholder='Enter Email',class='form-control')
+     br
+     p PASSWORD:
+     input#title(type="text",name="Password",placeholder='Enter Password',class='form-control', required)
+     br
+     p: button(type="submit",class="btn btn-success") SIGNUP
+
+    
+   h2  VIEW ACCOUNT:
+   form(method="POST",action="/view_account")
+     p Email:
+     input#title(type="text",name="Email",class='form-control',placeholder='Enter Email')
+     br
+     p PASSWORD:
+     input#title(type="text",name="Password",class='form-control',placeholder='Enter Password')
+     br
+     p: button(type="submit",class="btn btn-info") View Account
+
+    h2  DELETE ACCOUNT:
+   form(method="POST",action="/delete_account")
+     p Email:
+     input#title(type="text",name="Email",class='form-control',placeholder='Enter Email')
+     br
+     p PASSWORD:
+     input#title(type="text",name="Password",class='form-control',placeholder='Enter Password')
+     br
+     p: button(type="submit",class="btn btn-danger") Delete Account
+
+     h2  UPDATE ACCOUNT:
+   form(method="POST",action="/update_account")
+     p ID:
+     input#title(type="text",name="Id",class='form-control',placeholder="Enter Id")
+     br
+     p EMAIL:
+     input#title(type="text",name="Email",class='form-control',placeholder='Enter Email')
+     br
+     p NEW PASSWORD:
+     input#title(type="text",name="Password",class='form-control',placeholder='Enter Password')
+     br
+     p: button(type="submit",class="btn btn-primary") Update Account 
+  
+
+
+   

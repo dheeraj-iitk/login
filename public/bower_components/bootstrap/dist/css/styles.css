@@ -1,0 +1,27 @@
+body {
+    padding-right: 50px;
+    padding-left: 50px;
+    font: 14px  sans-serif;
+    background-image: url("../images/loginPortal.jfif");
+  }
+  a {
+    color: #00b7ff;
+  }
+  p{
+    color:#d4d4ac
+  }
+  h1{
+      font: Helvetica;
+      color: #f0ad4e;
+  }
+  h2{
+      color:#b4e787
+  }
+ #list{
+  background-image: url("../images/login_portal.jpg");
+ }
+ .carousel {
+  width:640px;
+  height:360px;
+  align-content:center
+}
